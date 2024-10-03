@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "past",
+  "version": "${version}",
+  "name": "Past Utility Mod",
+  "description": "A utility mod for the latest versions of minecraft, geared towards Anarchy Servers.",
+  "authors": [
+    "1nject",
+    "olliem5"
+  ],
+  "environment": "client",
+  "icon": "assets/pastclient/pastbanner.png",
+  "accessWidener": "pastclient.accesswidener",
+  "entrypoints": {
+    "client": [
+      "me.past.Past"
+    ],
+    "main": [
+      "me.past.Past"
+    ]
+  },
+  "mixins": [
+    "pastclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

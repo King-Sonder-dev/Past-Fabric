@@ -1,5 +1,7 @@
 package me.past;
 
+import me.past.api.cape.CapesManager;
+import me.past.api.module.ModuleManager;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
@@ -19,14 +21,20 @@ public class Past implements ModInitializer, ClientModInitializer {
     public static CustomFontRenderer latoFont;
     public static CustomFontRenderer verdanaFont;
     public static CustomFontRenderer arialFont;
-
+*/
+    /*
     public static EventBus EVENT_BUS;
     public static ForgeEvents forgeEvents;
     public static SettingsManager settingsManager;
+
+     */
     public static ModuleManager moduleManager;
+    /*
     public static CommandManager commandManager;
     public static FriendsManager friendsManager;
+    */
     public static CapesManager capesManager;
+    /*
     public static HudComponentManager hudComponentManager;
     public static ClickGUIOne clickGUIOne;
     public static ClickGUITwo clickGUITwo;
@@ -51,9 +59,11 @@ public class Past implements ModInitializer, ClientModInitializer {
         settingsManager = new SettingsManager();
         log("Settings initialized!");
 
+ */
+
         moduleManager = new ModuleManager();
         log("Modules Initialized!");
-
+        /*
         commandManager = new CommandManager();
         log("Commands Initialized!");
 
@@ -64,10 +74,10 @@ public class Past implements ModInitializer, ClientModInitializer {
         verdanaFont = new CustomFontRenderer(new Font("Verdana", 0, 18), true, false);
         arialFont = new CustomFontRenderer(new Font("Arial", 0, 18), true, false);
         log("Custom Fonts Initialized! (Author 086)!");
-
+*/
         capesManager = new CapesManager();
         log("Capes Initialized!");
-
+/*
         hudComponentManager = new HudComponentManager();
         log("HUD Components Initialized!");
 
